@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--        fx:controller="sample.client.SelectDress"-->
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClientController">
+    <children>
+        <AnchorPane prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #6200EE;">
+            <children>
+                <Line endX="-54.0" layoutX="221.0" layoutY="30.0" startX="-100.0" stroke="#2e0a65" strokeWidth="3.0" />
+                <Line endX="-54.0" layoutX="290.0" layoutY="29.0" startX="-100.0" stroke="#2e0a65" strokeWidth="3.0" />
+                <Line endX="-54.0" layoutX="431.0" layoutY="29.0" startX="-100.0" stroke="#2e0a65" strokeWidth="3.0" />
+                <Line endX="-54.0" layoutX="361.0" layoutY="29.0" startX="-100.0" stroke="#2e0a65" strokeWidth="3.0" />
+            <Line endX="-54.0" layoutX="499.0" layoutY="30.0" startX="-100.0" stroke="#2e0a65" strokeWidth="3.0" />
+                <Circle fill="#510bb5" layoutX="526.0" layoutY="30.0" radius="15.0" stroke="#510bb5" strokeType="INSIDE" />
+                <Circle fill="#2e0a65" layoutX="107.0" layoutY="29.0" radius="15.0" stroke="#2e0a65" strokeType="INSIDE" />
+                <Circle fill="#2e0a65" layoutX="177.0" layoutY="29.0" radius="15.0" stroke="#2e0a65" strokeType="INSIDE" />
+                <Circle fill="#2e0a65" layoutX="249.0" layoutY="29.0" radius="15.0" stroke="#2e0a65" strokeType="INSIDE" />
+                <Circle fill="#2e0a65" layoutX="321.0" layoutY="29.0" radius="15.0" stroke="#2e0a65" strokeType="INSIDE" />
+                <Circle fill="#2e0a65" layoutX="389.0" layoutY="30.0" radius="15.0" stroke="#2e0a65" strokeType="INSIDE" />
+                <Circle fill="#510bb5" layoutX="459.0" layoutY="30.0" radius="15.0" stroke="#510bb5" strokeType="INSIDE" />
+                <JFXButton layoutX="14.0" layoutY="18.0" onAction="#selectInvite" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
+                    <font>
+                        <Font size="1.0" />
+                    </font>
+                </JFXButton>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="19.0" layoutY="15.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/157798695645626245.png" />
+                    </image>
+                </ImageView>
+                <JFXButton layoutX="541.0" layoutY="17.0" onAction="#ThanksButton" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
+                    <font>
+                        <Font size="1.0" />
+                    </font>
+                </JFXButton>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="558.0" layoutY="15.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/right-line-arrow-ico-512.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="54.0" prefHeight="346.0" prefWidth="600.0">
+            <children>
+                <JFXButton layoutX="40.0" layoutY="162.0" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
+                    <font>
+                        <Font size="1.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="496.0" layoutY="161.0" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
+                    <font>
+                        <Font size="1.0" />
+                    </font>
+                </JFXButton>
+            <JFXTextField layoutX="307.0" layoutY="119.0" />
+            <JFXTextField layoutX="309.0" layoutY="171.0" />
+            <Text layoutX="307.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number">
+               <font>
+                  <Font name="Trebuchet MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="308.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV">
+               <font>
+                  <Font name="Trebuchet MS" size="16.0" />
+               </font>
+            </Text>
+            <JFXTextField layoutX="311.0" layoutY="220.0" />
+            <Circle fill="DODGERBLUE" layoutX="93.0" layoutY="89.0" radius="66.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+            <Circle fill="#f4f438e5" layoutX="159.0" layoutY="111.0" radius="66.0" stroke="#f4f438" strokeType="INSIDE" />
+            <Circle fill="#f04654eb" layoutX="106.0" layoutY="177.0" radius="66.0" stroke="#f24652" strokeType="INSIDE" />
+            <Text layoutX="310.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration">
+               <font>
+                  <Font name="Trebuchet MS" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="51.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Counter">
+               <font>
+                  <Font name="Trebuchet MS" size="25.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
