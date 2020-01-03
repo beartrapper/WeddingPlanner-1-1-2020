@@ -18,7 +18,7 @@
                   <Font name="Trebuchet MS" size="23.0" />
                </font>
             </Text>
-            <JFXButton layoutX="58.0" layoutY="138.0" prefHeight="59.0" prefWidth="197.0" style="-fx-background-color: #bf3f1f;" text="Select Image">
+            <JFXButton fx:id="fileAdder" layoutX="58.0" layoutY="138.0" onAction="#fileChooserDress" prefHeight="59.0" prefWidth="197.0" style="-fx-background-color: #bf3f1f;" text="Select Image">
                <font>
                   <Font name="Trebuchet MS" size="23.0" />
                </font>

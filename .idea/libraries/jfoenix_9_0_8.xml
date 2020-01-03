@@ -2,6 +2,8 @@
   <library name="jfoenix-9.0.8">
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/jfoenix-9.0.8.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/org.apache.commons.io.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/lib-regex-filter.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

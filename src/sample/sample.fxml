@@ -24,7 +24,7 @@
             <Image url="@images/lock.png" />
          </image>
       </ImageView>
-      <JFXTextField layoutX="350.0" layoutY="173.0" />
+      <JFXTextField fx:id="email" layoutX="350.0" layoutY="173.0" />
 <!--      <AutoCompleteTextField layoutX="164.0" layoutY="162.0" prefHeight="26.0" prefWidth="250.0" />-->
 <!--      <AutoCompleteTextField layoutX="164.0" layoutY="255.0" prefHeight="26.0" prefWidth="250.0" />-->
       <Text fill="#252525" layoutX="350.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="51.8515625">
@@ -37,19 +37,26 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <JFXPasswordField layoutX="350.0" layoutY="235.0" />
+      <JFXPasswordField fx:id="password" layoutX="350.0" layoutY="235.0" />
       <ImageView fitHeight="347.0" fitWidth="357.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/108-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="378.0" layoutY="283.0" onAction="#selectVenue" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #5db3c8;" text="OKAY!" />
+      <JFXButton fx:id="selectVenue" layoutX="378.0" layoutY="283.0" onAction="#selectVenue" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #5db3c8;" text="OKAY!" />
 
 <!--      <JFXButton layoutX="378.0" layoutY="296.0" prefHeight="32.0" prefWidth="96.0" />-->
       <JFXToggleButton layoutX="14.0" layoutY="294.0" onAction="#changeScreenButtonPushed" text="Switch to Admin" />
+      
       <Text layoutX="390.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+
          <font>
             <Font name="Candara" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="warning" fill="#ff1616" layoutX="14.0" layoutY="22.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar Liar !!" wrappingWidth="556.9830722808838">
+         <font>
+            <Font size="16.0" />
          </font>
       </Text>
    </children>
