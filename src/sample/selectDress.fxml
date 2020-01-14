@@ -47,17 +47,7 @@
       </AnchorPane>
       <AnchorPane layoutY="54.0" prefHeight="346.0" prefWidth="600.0">
          <children>
-            <JFXButton layoutX="40.0" layoutY="162.0" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
-               <font>
-                  <Font size="1.0" />
-               </font>
-            </JFXButton>
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="47.0" layoutY="160.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/157798695645626245.png" />
-               </image>
-            </ImageView>
-            <JFXButton layoutX="496.0" layoutY="161.0" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
+            <JFXButton layoutX="496.0" layoutY="161.0" onAction="#nextDress" prefHeight="25.0" prefWidth="53.0" text="Back" textFill="#4e2f7c">
                <font>
                   <Font size="1.0" />
                </font>
@@ -67,22 +57,22 @@
                   <Image url="@images/right-line-arrow-ico-512.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="185.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="dressImageChange" fitHeight="236.0" fitWidth="271.0" layoutX="185.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/Sed-23-512.png" />
+                  <Image url="@images/Dresses/50000.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="230.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs.">
+            <Text layoutX="230.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs.">
                <font>
                   <Font name="Trebuchet MS" size="21.0" />
                </font>
             </Text>
-            <Text layoutX="261.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234">
+            <Text fx:id="priceTagDresses" layoutX="261.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50000">
                <font>
                   <Font size="21.0" />
                </font>
             </Text>
-            <JFXButton layoutX="213.0" layoutY="227.0" style="-fx-background-color: #6200EE;" text="ADD TO CART">
+            <JFXButton layoutX="213.0" layoutY="292.0" onAction="#addToCartDresses" style="-fx-background-color: #6200EE;" text="ADD TO CART">
                <font>
                   <Font name="Trebuchet MS" size="18.0" />
                </font>

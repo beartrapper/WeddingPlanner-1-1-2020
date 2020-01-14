@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="438.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClientController">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="638.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/welcome.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="284.0" layoutY="313.0" onAction="#selectVenue" style="-fx-background-color: #0296b5;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

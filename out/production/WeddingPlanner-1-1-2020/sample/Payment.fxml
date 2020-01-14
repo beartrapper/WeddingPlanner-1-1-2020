@@ -62,8 +62,8 @@
                         <Font size="1.0" />
                     </font>
                 </JFXButton>
-            <JFXTextField layoutX="307.0" layoutY="119.0" />
-            <JFXTextField layoutX="309.0" layoutY="171.0" />
+            <JFXTextField fx:id="cardNumberField" layoutX="307.0" layoutY="119.0" />
+            <JFXTextField fx:id="cvvField" layoutX="309.0" layoutY="171.0" />
             <Text layoutX="307.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number">
                <font>
                   <Font name="Trebuchet MS" size="16.0" />
@@ -88,6 +88,12 @@
                   <Font name="Trebuchet MS" size="25.0" />
                </font>
             </Text>
+            <JFXButton layoutX="337.0" layoutY="267.0" onAction="#Payment" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #f24652;" text="Pay" textFill="WHITE" />
+            <Text fx:id="numError" fill="#f24652" layoutX="448.0" layoutY="145.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid" />
+            <Text fx:id="cvvError" fill="#f24652" layoutX="450.0" layoutY="198.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid" />
+            <Text fx:id="successMessage" fill="#4bb543" layoutX="347.0" layoutY="316.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" />
+            <JFXButton layoutX="496.0" layoutY="33.0" onAction="#showTotal" style="-fx-background-color: #f04654;" text="Show Total" textFill="WHITE" />
+            <Text fx:id="totalTag" layoutX="511.0" layoutY="83.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total" />
             </children>
         </AnchorPane>
     </children>

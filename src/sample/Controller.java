@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -208,18 +209,23 @@ public class Controller implements Initializable {
         window.show();
     }
 
+
+
+
     public void selectVenue(ActionEvent event) throws IOException
     {
         if(email.getText().equals("shaheer@weddingplanner.com") && password.getText().equals("123")) {
-            Parent tableViewParent = FXMLLoader.load(getClass().getResource("selectVenue.fxml"));
+            Parent tableViewParent = FXMLLoader.load(getClass().getResource("WelcomePage.fxml"));
             Scene tableViewScene = new Scene(tableViewParent);
 
             //This line gets the Stage information
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
+
             window.setScene(tableViewScene);
             window.show();
         } else {
+//            System.out.print(venueImage);
             warning.setOpacity(1.0);
 
         }
